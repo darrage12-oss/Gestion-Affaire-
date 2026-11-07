@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr" data-theme="emerald-pro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Études Lignes MT-BT PRO · SRM-TTA Direction Provinciale d'Ouezzane · A. DARRAGE</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+<!-- BANDEAU SUPÉRIEUR OFFICIEL VERSION PRO -->
+<header class="pro-topbar no-print">
+  <div class="pro-topbar-inner">
+    <div class="pro-brand-left">
+      <div class="pro-logo-wrap">
+        <img id="appTopLogo" alt="Logo SRM-TTA">
+      </div>
+      <div class="pro-brand-titles">
+        <h1>
+          <span>ÉTUDES LIGNES MT · BT</span>
+          <span class="pro-badge-ver">⭐ VERSION PRO</span>
+        </h1>
+        <div class="pro-brand-sub">
+          <span>SRM Tanger-Tétouan-Al Hoceima</span>
+          <span>•</span>
+          <span class="pro-dp-pill">🏛️ Direction Provinciale d'Ouezzane</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mention Officielle Préparateur de l'application -->
+    <div class="pro-author-card" title="Concepteur & Préparateur de l'application">
+      <div class="pro-author-avatar">AD</div>
+      <div class="pro-author-info">
+        <span>Préparateur de l'application</span>
+        <b>A. DARRAGE</b>
+      </div>
+    </div>
+
+    <!-- Contrôles Globaux & Navigation Affaires -->
+    <div class="pro-topbar-actions">
+      <select id="proThemeSelect" class="pro-theme-sel" title="Changer le thème visuel de l'application">
+        <option value="emerald-pro">🎨 Thème : Émeraude & Or PRO</option>
+        <option value="royal-pro">🎨 Thème : Bleu Royal SRM PRO</option>
+        <option value="slate-pro">🎨 Thème : Ardoise Exécutif PRO</option>
+        <option value="bordeaux-pro">🎨 Thème : Prestige Bordeaux PRO</option>
+      </select>
+
+      <button class="pro-top-btn portal" id="goAff" title="Ouvrir l'écran de sélection des affaires">
+        📂 Sélectionner une Affaire
+      </button>
+      <button class="pro-top-btn gold" id="newP" title="Créer une nouvelle affaire vierge">
+        ➕ Nouvelle Affaire
+      </button>
+      <button class="pro-top-btn" id="newPFromBord" title="Créer une nouvelle affaire en reprenant un Bordereau existant">
+        📋 Avec Bordereau
+      </button>
+      <button class="pro-top-btn" id="newPFromPdf" title="Importer un Bordereau depuis un fichier PDF">
+        📄 Importer PDF
+      </button>
+      <input type="file" id="inpImportPdfSidebar" accept=".pdf" style="display:none">
+
+      <button class="pro-top-btn" id="expCurrentAffaire" title="Sauvegarder l'affaire active (.json)">
+        💾 Sauvegarder (.json)
+      </button>
+      <button class="pro-top-btn" id="expAllJson" title="Sauvegarder tous les projets (.json)">
+        📦 Tout exporter
+      </button>
+      <button class="pro-top-btn" id="impP" title="Importer un ou plusieurs dossiers (.json)">
+        📥 Importer (.json)
+      </button>
+      <input type="file" id="impF" accept=".json,application/json" hidden>
+    </div>
+  </div>
+</header>
+
+<div class="app">
+  <!-- Liste latérale désactivée conformément à la demande utilisateur ("je veux pas dossier afficher") -->
+  <aside class="side" hidden aria-hidden="true">
+    <div id="plist"></div>
+    <div id="dbstat"></div>
+  </aside>
+
+  <section class="main" id="main"></section>
+</div>
+
+<footer class="pro-footer no-print">
+  <div>
+    <b>SRM Tanger-Tétouan-Al Hoceima</b> — <b>Direction Provinciale d'Ouezzane</b> · Système Professionnel d'Études & Chiffrage des Réseaux MT/BT
+  </div>
+  <div>
+    Préparateur de l'application : <b style="color:var(--brand)">A. DARRAGE</b>
+  </div>
+</footer>
+
+<div id="toast" class="toast" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js"></script>
+
+<!-- Scripts de l'application Gestion Affaire MT-BT -->
+<script src="js/catalog.js"></script>
+<script src="js/logo.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "aff_112_2026",
+    "name": "Électrification du Lotissement (Ligne MT In-Site, Poste H61 et Réseau BT)",
+    "upd": 1794087000000,
+    "data": {
+      "id": "aff_112_2026",
+      "name": "Électrification du Lotissement (Ligne MT In-Site, Poste H61 et Réseau BT)",
+      "upd": 1794087000000,
+      "tva": 20,
+      "peines": 20,
+      "info": {
+        "num": "SET/DPO/112/2026",
+        "refAffaire": "SET/DPO/112/2026",
+        "demande": "46247",
+        "contrat": "5029470",
+        "devis": "552828",
+        "objet": "Électrification du Lotissement (Ligne MT In-Site, Poste H61 et Réseau BT)",
+        "commune": "Beni Qolla",
+        "province": "Ouezzane",
+        "village": "Oulad LHAJ",
+        "date": "2026-11-06",
+        "dateDemande": "2026-08-06",
+        "destinataire": "Sté Compagnie Publique d'Aménagement et Investissement",
+        "adresseCorresp": "Ouezzane Centre",
+        "puissance": "50",
+        "typeAff": "MT/BT",
+        "statut": "En étude",
+        "activeSecs": {
+          "MT": false,
+          "MT_HS": false,
+          "MT_IS": true,
+          "PT": true,
+          "BT": true
+        }
+      },
+      "bord": [
+        {
+          "key": "b1",
+          "sec": "MT_IS",
+          "lot": "lot1_is",
+          "code": "02-02-23",
+          "d": "Poteau béton arme classe B 10,50 m 500 daN",
+          "c": "F+M",
+          "u": "U",
+          "q": 3,
+          "pu": 2520,
+          "on": true
+        },
+        {
+          "key": "b2",
+          "sec": "PT",
+          "lot": "lot2",
+          "code": "60-02-01",
+          "d": "Génie civil poste de transformation aérien type H61 sur poteau béton armé",
+          "c": "F+M",
+          "u": "U",
+          "q": 1,
+          "pu": 7900,
+          "on": true
+        },
+        {
+          "key": "b3",
+          "sec": "BT",
+          "lot": "lot3",
+          "code": "02-02-03",
+          "d": "Poteau béton armé classe A 8 m 500 daN",
+          "c": "F+M",
+          "u": "U",
+          "q": 4,
+          "pu": 1480,
+          "on": true
+        }
+      ]
+    }
+  }
+]
